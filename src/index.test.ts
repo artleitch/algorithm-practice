@@ -1,7 +1,7 @@
 const assert = require('assert')
-const { module02 } = require('../module02')
+const { jsGym } = require('./index')
 
-describe('module02', function () {
+describe('module', function () {
   describe('#methodName', function () {
     it('should...', function () {})
   })

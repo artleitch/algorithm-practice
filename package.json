@@ -4,7 +4,7 @@
   "description": "A place to practice algorithm problems that I find around the web",
   "main": "index.js",
   "scripts": {
-    "test": "mocha -r ts-node/register src/**/*/test.ts",
+    "test": "mocha -r ts-node/register src/**/*.test.ts",
     "build": "tsc",
     "watch": "npm-watch",
     "dev": "tsc -w --onSuccess \"npm run coverage\"",
