@@ -4,14 +4,22 @@
   "description": "A place to practice algorithm problems that I find around the web",
   "main": "index.js",
   "scripts": {
-		"test": "mocha --recursive ./dist/test/*.js",
-		"build": "tsc",
-		"watch": "npm-watch"
+    "test": "mocha -r ts-node/register src/**/test.ts",
+    "build": "tsc",
+    "watch": "npm-watch",
+    "dev": "tsc -w --onSuccess \"npm run coverage\"",
+    "coverage": "nyc --reporter=lcov --reporter=text-summary npm t"
   },
-	"watch": {
-		"test": "dist/{src,test}/*.js"
-	},
-	"repository": {
+  "watch": {
+    "coverage": {
+      "patterns": [
+        "src"
+      ],
+      "quiet": true,
+      "extensions": "ts"
+    }
+  },
+  "repository": {
     "type": "git",
     "url": "git+https://github.com/artleitch/js-gym.git"
   },
@@ -34,7 +42,9 @@
     "eslint-plugin-react": "^7.21.5",
     "jsdoc": "^3.6.6",
     "mocha": "^8.2.1",
-    "prettier": "^2.1.2"
+    "nyc": "^15.1.0",
+    "prettier": "^2.1.2",
+    "ts-node": "^9.0.0"
   },
   "dependencies": {
     "@types/node": "^14.14.6",
