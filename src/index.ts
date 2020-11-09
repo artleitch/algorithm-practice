@@ -1,11 +1,11 @@
 require('source-map-support').install()
 const {
-  warmUpChallenges,
+  WarmUpChallenges,
 } = require('./modules/warm-up-challenges/warm-up-challenges')
 const { module02 } = require('./modules/module02/module02')
 
 exports.jsGym = {
-  warmUpChallenges,
+  warmUpChallenges: new WarmUpChallenges(),
   module02,
 }
 export {}

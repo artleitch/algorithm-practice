@@ -8,7 +8,8 @@
     "build": "tsc",
     "watch": "npm-watch",
     "dev": "tsc -w --onSuccess \"npm run coverage\"",
-    "coverage": "nyc --reporter=lcov --reporter=text-summary npm t"
+    "coverage": "nyc --reporter=lcov --reporter=text-summary npm t",
+    "docs": "typedoc --plugin typedoc-plugin-markdown --exclude src/**/*.test.ts --out docs src"
   },
   "watch": {
     "coverage": {
@@ -44,7 +45,9 @@
     "mocha": "^8.2.1",
     "nyc": "^15.1.0",
     "prettier": "^2.1.2",
-    "ts-node": "^9.0.0"
+    "ts-node": "^9.0.0",
+    "typedoc": "^0.19.2",
+    "typedoc-plugin-markdown": "^3.0.11"
   },
   "dependencies": {
     "@types/node": "^14.14.6",
