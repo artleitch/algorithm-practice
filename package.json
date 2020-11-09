@@ -9,7 +9,7 @@
     "watch": "npm-watch",
     "dev": "tsc -w --onSuccess \"npm run coverage\"",
     "coverage": "nyc --reporter=lcov --reporter=text-summary npm t",
-    "docs": "typedoc --plugin typedoc-plugin-markdown --exclude src/**/*.test.ts --out docs src"
+    "docs": "typedoc --mode file --plugin typedoc-plugin-markdown --exclude src/**/*.test.ts --out docs src"
   },
   "watch": {
     "coverage": {

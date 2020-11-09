@@ -6,8 +6,18 @@
 
 ## Index
 
-### Modules
+### Classes
 
-* ["src/index"](modules/_src_index_.md)
-* ["src/modules/module02/module02"](modules/_src_modules_module02_module02_.md)
-* ["src/modules/warm-up-challenges/warm-up-challenges"](modules/_src_modules_warm_up_challenges_warm_up_challenges_.md)
+* [WarmUpChallenges](classes/warmupchallenges.md)
+
+### Variables
+
+* [module02](globals.md#module02)
+
+## Variables
+
+### module02
+
+•  **module02**: any
+
+*Defined in [src/index.ts:5](https://github.com/artleitch/js-gym/blob/1e02fe6/src/index.ts#L5)*
