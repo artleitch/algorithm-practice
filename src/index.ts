@@ -1,15 +1,9 @@
 require('source-map-support').install()
-const { module01 } = require('./modules/module-01/module-01')
+const { module01 } = require('./modules/module01/module01')
+const { module02 } = require('./modules/module02/module02')
 
 exports.jsGym = {
-  algorithmOne(a: number, b: number) {
-    return a + b
-  },
-
-  algorithmTwo(a: number, b: number) {
-    return a * b
-  },
-
   module01,
+  module02,
 }
 export {}
