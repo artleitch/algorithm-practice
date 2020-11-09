@@ -1,2 +1,4 @@
-# algorithm-practice
-A place to practice algorithm problems that I find around the web
+#Javascript Gym
+A small project to collect various algorithm challenges, and practice library framework building techniques
+
+[Docs](docs/README.md)

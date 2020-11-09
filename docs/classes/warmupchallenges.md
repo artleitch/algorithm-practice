@@ -4,8 +4,6 @@
 
 # Class: WarmUpChallenges
 
-Warm up challenges
-
 ## Hierarchy
 
 * **WarmUpChallenges**
@@ -14,29 +12,19 @@ Warm up challenges
 
 ### Methods
 
-* [alg02](warmupchallenges.md#alg02)
 * [alg03](warmupchallenges.md#alg03)
 * [alg04](warmupchallenges.md#alg04)
 * [alg05](warmupchallenges.md#alg05)
+* [countingValleys](warmupchallenges.md#countingvalleys)
 * [salesByMatch](warmupchallenges.md#salesbymatch)
 
 ## Methods
-
-### alg02
-
-▸ `Static`**alg02**(): void
-
-*Defined in [src/modules/warm-up-challenges/warm-up-challenges.ts:24](https://github.com/artleitch/js-gym/blob/1e02fe6/src/modules/warm-up-challenges/warm-up-challenges.ts#L24)*
-
-**Returns:** void
-
-___
 
 ### alg03
 
 ▸ `Static`**alg03**(): void
 
-*Defined in [src/modules/warm-up-challenges/warm-up-challenges.ts:25](https://github.com/artleitch/js-gym/blob/1e02fe6/src/modules/warm-up-challenges/warm-up-challenges.ts#L25)*
+*Defined in [src/modules/warm-up-challenges/warm-up-challenges.ts:46](https://github.com/artleitch/js-gym/blob/0da55a7/src/modules/warm-up-challenges/warm-up-challenges.ts#L46)*
 
 **Returns:** void
 
@@ -46,7 +34,7 @@ ___
 
 ▸ `Static`**alg04**(): void
 
-*Defined in [src/modules/warm-up-challenges/warm-up-challenges.ts:26](https://github.com/artleitch/js-gym/blob/1e02fe6/src/modules/warm-up-challenges/warm-up-challenges.ts#L26)*
+*Defined in [src/modules/warm-up-challenges/warm-up-challenges.ts:47](https://github.com/artleitch/js-gym/blob/0da55a7/src/modules/warm-up-challenges/warm-up-challenges.ts#L47)*
 
 **Returns:** void
 
@@ -56,9 +44,35 @@ ___
 
 ▸ `Static`**alg05**(): void
 
-*Defined in [src/modules/warm-up-challenges/warm-up-challenges.ts:27](https://github.com/artleitch/js-gym/blob/1e02fe6/src/modules/warm-up-challenges/warm-up-challenges.ts#L27)*
+*Defined in [src/modules/warm-up-challenges/warm-up-challenges.ts:48](https://github.com/artleitch/js-gym/blob/0da55a7/src/modules/warm-up-challenges/warm-up-challenges.ts#L48)*
 
 **Returns:** void
+
+___
+
+### countingValleys
+
+▸ `Static`**countingValleys**(`length`: number, `movements`: string): number
+
+*Defined in [src/modules/warm-up-challenges/warm-up-challenges.ts:38](https://github.com/artleitch/js-gym/blob/0da55a7/src/modules/warm-up-challenges/warm-up-challenges.ts#L38)*
+
+**`name`** countingValleys
+
+**`description`** 
+Given an string of 'D' and 'U' representing a movement of down and up respectively, find the number of valleys in the array
+
+[Original challenge](https://www.hackerrank.com/challenges/counting-valleys/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=warmup)
+
+#### Parameters:
+
+Name | Type | Description |
+------ | ------ | ------ |
+`length` | number | How long the array is |
+`movements` | string | String of movements, given as 'D' and 'U' |
+
+**Returns:** number
+
+Number of valleys in array of movements
 
 ___
 
@@ -66,15 +80,22 @@ ___
 
 ▸ `Static`**salesByMatch**(`length`: number, `socks`: number[]): number
 
-*Defined in [src/modules/warm-up-challenges/warm-up-challenges.ts:13](https://github.com/artleitch/js-gym/blob/1e02fe6/src/modules/warm-up-challenges/warm-up-challenges.ts#L13)*
+*Defined in [src/modules/warm-up-challenges/warm-up-challenges.ts:15](https://github.com/artleitch/js-gym/blob/0da55a7/src/modules/warm-up-challenges/warm-up-challenges.ts#L15)*
+
+**`name`** salesByMatch
+
+**`description`** 
+Find the number of pairs of numbers in an array
+
+[Original challenge](https://www.hackerrank.com/challenges/sock-merchant/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=warmup)
 
 #### Parameters:
 
 Name | Type | Description |
 ------ | ------ | ------ |
 `length` | number | How long the array is |
-`socks` | number[] | Array of numbers |
+`socks` | number[] | Array of numbers to match |
 
 **Returns:** number
 
-number of matches in array of numbers
+Number of matches in array of numbers

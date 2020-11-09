@@ -20,4 +20,4 @@
 
 •  **module02**: any
 
-*Defined in [src/index.ts:5](https://github.com/artleitch/js-gym/blob/1e02fe6/src/index.ts#L5)*
+*Defined in [src/index.ts:5](https://github.com/artleitch/js-gym/blob/0da55a7/src/index.ts#L5)*
