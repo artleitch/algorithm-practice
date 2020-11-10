@@ -1,5 +1,4 @@
-const assert = require('assert')
-const { module02 } = require('./module02')
+import module02 from './module02'
 
 // describe('module02', function () {
 //   describe('#methodName', function () {

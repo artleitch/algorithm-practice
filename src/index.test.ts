@@ -1,5 +1,4 @@
-const assert = require('assert')
-const { jsGym } = require('./index')
+import jsGym from './index'
 
 // describe('module', function () {
 //   describe('#methodName', function () {
