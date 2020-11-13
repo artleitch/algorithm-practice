@@ -1,6 +1,10 @@
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 require('source-map-support').install()
 
-const module02 = {}
+class Module02 {
+  static testAlgorithm(): boolean {
+    return true
+  }
+}
 
-export default module02
+export default Module02

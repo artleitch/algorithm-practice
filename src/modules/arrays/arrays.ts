@@ -2,7 +2,7 @@
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 require('source-map-support').install()
 
-const arrays = {
+class Arrays {
   /**
    * @name ds2DArray
    * @description
@@ -14,7 +14,7 @@ const arrays = {
    * @param arr The 2D array
    * @returns Total of all hourglass shapes within the 2D array
    */
-  ds2DArray: (arr: number[][]): number => {
+  static ds2DArray(arr: number[][]): number {
     function getHourGlassTotal(tempArr: number[][], start) {
       const val1 = tempArr[start[0]][start[1]]
       const val2 = tempArr[start[0]][start[1] + 1]
@@ -40,11 +40,23 @@ const arrays = {
       // update max
       return Math.max(acc, hourGlassTotal)
     }, -Infinity)
-  },
-  leftRotation: () => {},
-  newYearChaos: () => {},
-  minimumSwaps2: () => {},
-  arrayManipulation: () => {},
+  }
+
+  static leftRotation(): boolean {
+    return true
+  }
+
+  static newYearChaos(): boolean {
+    return true
+  }
+
+  static minimumSwaps2(): boolean {
+    return true
+  }
+
+  static arrayManipulation(): boolean {
+    return true
+  }
 }
 
-export default arrays
+export default Arrays
