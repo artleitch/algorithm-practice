@@ -9,6 +9,7 @@
 ### Classes
 
 * [Arrays](classes/arrays.md)
+* [DictionariesAndHashmaps](classes/dictionariesandhashmaps.md)
 * [Module02](classes/module02.md)
 * [WarmUpChallenges](classes/warmupchallenges.md)
 
@@ -22,7 +23,7 @@
 
 ▪ `Const` **jsGym**: object
 
-*Defined in [src/index.ts:7](https://github.com/artleitch/js-gym/blob/1c6c7e4/src/index.ts#L7)*
+*Defined in [src/index.ts:7](https://github.com/artleitch/js-gym/blob/f1714d4/src/index.ts#L7)*
 
 #### Properties:
 
