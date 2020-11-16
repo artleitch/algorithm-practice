@@ -24,7 +24,7 @@
 
 ▸ `Static`**arrayManipulation**(): boolean
 
-*Defined in [src/modules/arrays/arrays.ts:57](https://github.com/artleitch/js-gym/blob/f1714d4/src/modules/arrays/arrays.ts#L57)*
+*Defined in [src/modules/arrays/arrays.ts:57](https://github.com/artleitch/js-gym/blob/8813bf5/src/modules/arrays/arrays.ts#L57)*
 
 **Returns:** boolean
 
@@ -34,7 +34,7 @@ ___
 
 ▸ `Static`**ds2DArray**(`arr`: number[][]): number
 
-*Defined in [src/modules/arrays/arrays.ts:17](https://github.com/artleitch/js-gym/blob/f1714d4/src/modules/arrays/arrays.ts#L17)*
+*Defined in [src/modules/arrays/arrays.ts:17](https://github.com/artleitch/js-gym/blob/8813bf5/src/modules/arrays/arrays.ts#L17)*
 
 **`name`** ds2DArray
 
@@ -60,7 +60,7 @@ ___
 
 ▸ `Static`**leftRotation**(): boolean
 
-*Defined in [src/modules/arrays/arrays.ts:45](https://github.com/artleitch/js-gym/blob/f1714d4/src/modules/arrays/arrays.ts#L45)*
+*Defined in [src/modules/arrays/arrays.ts:45](https://github.com/artleitch/js-gym/blob/8813bf5/src/modules/arrays/arrays.ts#L45)*
 
 **Returns:** boolean
 
@@ -70,7 +70,7 @@ ___
 
 ▸ `Static`**minimumSwaps2**(): boolean
 
-*Defined in [src/modules/arrays/arrays.ts:53](https://github.com/artleitch/js-gym/blob/f1714d4/src/modules/arrays/arrays.ts#L53)*
+*Defined in [src/modules/arrays/arrays.ts:53](https://github.com/artleitch/js-gym/blob/8813bf5/src/modules/arrays/arrays.ts#L53)*
 
 **Returns:** boolean
 
@@ -80,6 +80,6 @@ ___
 
 ▸ `Static`**newYearChaos**(): boolean
 
-*Defined in [src/modules/arrays/arrays.ts:49](https://github.com/artleitch/js-gym/blob/f1714d4/src/modules/arrays/arrays.ts#L49)*
+*Defined in [src/modules/arrays/arrays.ts:49](https://github.com/artleitch/js-gym/blob/8813bf5/src/modules/arrays/arrays.ts#L49)*
 
 **Returns:** boolean

@@ -11,6 +11,7 @@
 * [Arrays](classes/arrays.md)
 * [DictionariesAndHashmaps](classes/dictionariesandhashmaps.md)
 * [Module02](classes/module02.md)
+* [Sorting](classes/sorting.md)
 * [WarmUpChallenges](classes/warmupchallenges.md)
 
 ### Object literals
@@ -23,7 +24,7 @@
 
 ▪ `Const` **jsGym**: object
 
-*Defined in [src/index.ts:7](https://github.com/artleitch/js-gym/blob/f1714d4/src/index.ts#L7)*
+*Defined in [src/index.ts:7](https://github.com/artleitch/js-gym/blob/8813bf5/src/index.ts#L7)*
 
 #### Properties:
 
