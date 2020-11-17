@@ -13,6 +13,7 @@
 ### Methods
 
 * [bubbleSort](sorting.md#bubblesort)
+* [countingInversions](sorting.md#countinginversions)
 * [fraudulentActivitiyNotifications](sorting.md#fraudulentactivitiynotifications)
 * [markAndToys](sorting.md#markandtoys)
 
@@ -22,7 +23,7 @@
 
 ▸ `Static`**bubbleSort**(`a`: number[]): number
 
-*Defined in [src/modules/sorting/sorting.ts:24](https://github.com/artleitch/js-gym/blob/f107d0d/src/modules/sorting/sorting.ts#L24)*
+*Defined in [src/modules/sorting/sorting.ts:24](https://github.com/artleitch/js-gym/blob/3839d11/src/modules/sorting/sorting.ts#L24)*
 
 **`name`** bubbleSort
 
@@ -50,11 +51,35 @@ Total number of swaps made in sorting
 
 ___
 
+### countingInversions
+
+▸ `Static`**countingInversions**(`arr`: number[]): number
+
+*Defined in [src/modules/sorting/sorting.ts:155](https://github.com/artleitch/js-gym/blob/3839d11/src/modules/sorting/sorting.ts#L155)*
+
+**`name`** countingInversions
+
+**`description`** 
+
+[Original challenge](https://www.hackerrank.com/challenges/ctci-merge-sort/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=sorting&h_r=next-challenge&h_v=zen&h_r=next-challenge&h_v=zen&h_r=next-challenge&h_v=zen&h_r=next-challenge&h_v=zen)
+
+#### Parameters:
+
+Name | Type | Description |
+------ | ------ | ------ |
+`arr` | number[] | Array of unsorted numbers |
+
+**Returns:** number
+
+The number of inversions needed to sort array
+
+___
+
 ### fraudulentActivitiyNotifications
 
 ▸ `Static`**fraudulentActivitiyNotifications**(`expenditure`: number[], `d`: number): number
 
-*Defined in [src/modules/sorting/sorting.ts:102](https://github.com/artleitch/js-gym/blob/f107d0d/src/modules/sorting/sorting.ts#L102)*
+*Defined in [src/modules/sorting/sorting.ts:102](https://github.com/artleitch/js-gym/blob/3839d11/src/modules/sorting/sorting.ts#L102)*
 
 **`name`** fraudulentActivitiyNotifications
 
@@ -89,7 +114,7 @@ ___
 
 ▸ `Static`**markAndToys**(`prices`: number[], `k`: number): number
 
-*Defined in [src/modules/sorting/sorting.ts:62](https://github.com/artleitch/js-gym/blob/f107d0d/src/modules/sorting/sorting.ts#L62)*
+*Defined in [src/modules/sorting/sorting.ts:62](https://github.com/artleitch/js-gym/blob/3839d11/src/modules/sorting/sorting.ts#L62)*
 
 **`name`** markAndToys
 

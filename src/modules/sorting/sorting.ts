@@ -35,9 +35,9 @@ class Sorting {
         }
       }
     }
-    console.log(`Array is sorted in ${swaps} swaps.`)
-    console.log(`First Element: ${a[0]}`)
-    console.log(`Last Element: ${a[a.length - 1]}`)
+    // console.log(`Array is sorted in ${swaps} swaps.`)
+    // console.log(`First Element: ${a[0]}`)
+    // console.log(`Last Element: ${a[a.length - 1]}`)
     return swaps
   }
 
@@ -141,6 +141,56 @@ class Sorting {
       }
     }
     return notifications
+  }
+
+  /**
+   * @name countingInversions
+   * @description
+   *
+   * [Original challenge](https://www.hackerrank.com/challenges/ctci-merge-sort/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=sorting&h_r=next-challenge&h_v=zen&h_r=next-challenge&h_v=zen&h_r=next-challenge&h_v=zen&h_r=next-challenge&h_v=zen)
+   *
+   * @param arr Array of unsorted numbers
+   * @returns The number of inversions needed to sort array
+   */
+  static countingInversions(arr: number[]): number {
+    function merge(
+      a1: number[],
+      a2: number[]
+    ): { newArr: number[]; count: number } {
+      let ptrA = 0
+      let ptrB = 0
+      let count = 0
+      const NewArr: number[] = []
+      while (ptrA < a1.length && ptrB < a2.length) {
+        if (a1[ptrA] <= a2[ptrB]) {
+          NewArr.push(a1[ptrA])
+          ptrA++
+        } else {
+          NewArr.push(a2[ptrB])
+          ptrB++
+          // and here's the extra line to get the count
+          count = count + (a1.length - ptrA)
+        }
+      }
+      for (let i = ptrA; i < a1.length; i++) {
+        NewArr.push(a1[i])
+      }
+      for (let i = ptrB; i < a2.length; i++) {
+        NewArr.push(a2[i])
+      }
+      return { newArr: NewArr, count }
+    }
+
+    function mergesort(myar: number[]): { newArr: number[]; count: number } {
+      if (myar.length == 1) return { newArr: myar, count: 0 }
+      let mid = Math.floor(myar.length / 2)
+      const { newArr: a1, count: count1 } = mergesort(myar.slice(0, mid))
+      const { newArr: a2, count: count2 } = mergesort(myar.slice(mid))
+      const { newArr, count } = merge(a1, a2)
+      return { newArr, count: count + count1 + count2 }
+    }
+
+    return mergesort(arr).count
   }
 }
 

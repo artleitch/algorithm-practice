@@ -50,5 +50,19 @@ describe('Sorting', () => {
       expect(Sorting.fraudulentActivitiyNotifications(arr, 4)).to.equal(0)
     })
   })
+  describe('#countingInversions', () => {
+    it('should return 0 for a sorted array', () => {
+      const arr = [10, 20, 30, 40, 50]
+      expect(Sorting.countingInversions(arr)).to.equal(0)
+    })
+    it('should return 1 for a slightly unsorted array', () => {
+      const arr = [10, 20, 30, 50, 40]
+      expect(Sorting.countingInversions(arr)).to.equal(1)
+    })
+    it('should return 4 for an unsorted array', () => {
+      const arr = [2, 1, 3, 1, 2]
+      expect(Sorting.countingInversions(arr)).to.equal(4)
+    })
+  })
 })
 export {}
