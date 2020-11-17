@@ -13,6 +13,7 @@
 ### Methods
 
 * [bubbleSort](sorting.md#bubblesort)
+* [fraudulentActivitiyNotifications](sorting.md#fraudulentactivitiynotifications)
 * [markAndToys](sorting.md#markandtoys)
 
 ## Methods
@@ -21,7 +22,7 @@
 
 ▸ `Static`**bubbleSort**(`a`: number[]): number
 
-*Defined in [src/modules/sorting/sorting.ts:24](https://github.com/artleitch/js-gym/blob/6ec6fef/src/modules/sorting/sorting.ts#L24)*
+*Defined in [src/modules/sorting/sorting.ts:24](https://github.com/artleitch/js-gym/blob/f107d0d/src/modules/sorting/sorting.ts#L24)*
 
 **`name`** bubbleSort
 
@@ -49,13 +50,48 @@ Total number of swaps made in sorting
 
 ___
 
+### fraudulentActivitiyNotifications
+
+▸ `Static`**fraudulentActivitiyNotifications**(`expenditure`: number[], `d`: number): number
+
+*Defined in [src/modules/sorting/sorting.ts:102](https://github.com/artleitch/js-gym/blob/f107d0d/src/modules/sorting/sorting.ts#L102)*
+
+**`name`** fraudulentActivitiyNotifications
+
+**`description`** 
+HackerLand National Bank has a simple policy for warning clients about
+possible fraudulent account activity. If the amount spent by a client on a
+particular day is greater than or equal to 2x the client's median spending
+for a trailing number of days, they send the client a notification about
+potential fraud. The bank doesn't send the client any notifications until
+they have at least that trailing number of prior days' transaction data.
+
+Given the number of trailing days d and a client's total daily expenditures
+for a period of n days, find and print the number of times the client will
+receive a notification over all days
+
+[Original challenge](https://www.hackerrank.com/challenges/mark-and-toys/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=sorting&h_r=next-challenge&h_v=zen)
+
+#### Parameters:
+
+Name | Type | Description |
+------ | ------ | ------ |
+`expenditure` | number[] | An array of daily expenditures |
+`d` | number | The number of trailing days to calculate median from |
+
+**Returns:** number
+
+The number of days that an alert is sent
+
+___
+
 ### markAndToys
 
 ▸ `Static`**markAndToys**(`prices`: number[], `k`: number): number
 
-*Defined in [src/modules/sorting/sorting.ts:62](https://github.com/artleitch/js-gym/blob/6ec6fef/src/modules/sorting/sorting.ts#L62)*
+*Defined in [src/modules/sorting/sorting.ts:62](https://github.com/artleitch/js-gym/blob/f107d0d/src/modules/sorting/sorting.ts#L62)*
 
-**`name`** bubbleSort
+**`name`** markAndToys
 
 **`description`** 
 Mark and Jane are very happy after having their first child. Their son

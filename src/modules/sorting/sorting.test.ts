@@ -36,5 +36,19 @@ describe('Sorting', () => {
       expect(Sorting.markAndToys(arr, 50)).to.equal(4)
     })
   })
+  describe('#fraudulentActivitiyNotifications', () => {
+    it('should return 1 for a limited number of expenditures', () => {
+      const arr = [10, 20, 30, 40, 50]
+      expect(Sorting.fraudulentActivitiyNotifications(arr, 3)).to.equal(1)
+    })
+    it('should return 2 for a limited number of expenditures', () => {
+      const arr = [2, 3, 4, 2, 3, 6, 8, 4, 5]
+      expect(Sorting.fraudulentActivitiyNotifications(arr, 5)).to.equal(2)
+    })
+    it('should return 0 for a limited number of expenditures', () => {
+      const arr = [1, 2, 3, 4, 4]
+      expect(Sorting.fraudulentActivitiyNotifications(arr, 4)).to.equal(0)
+    })
+  })
 })
 export {}

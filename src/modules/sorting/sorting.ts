@@ -42,7 +42,7 @@ class Sorting {
   }
 
   /**
-   * @name bubbleSort
+   * @name markAndToys
    * @description
    * Mark and Jane are very happy after having their first child. Their son
    * loves toys, so Mark wants to buy some. There are a number of different toys
@@ -77,6 +77,70 @@ class Sorting {
       }
     }
     return toysToPurchase
+  }
+
+  /**
+   * @name fraudulentActivitiyNotifications
+   * @description
+   * HackerLand National Bank has a simple policy for warning clients about
+   * possible fraudulent account activity. If the amount spent by a client on a
+   * particular day is greater than or equal to 2x the client's median spending
+   * for a trailing number of days, they send the client a notification about
+   * potential fraud. The bank doesn't send the client any notifications until
+   * they have at least that trailing number of prior days' transaction data.
+   *
+   * Given the number of trailing days d and a client's total daily expenditures
+   * for a period of n days, find and print the number of times the client will
+   * receive a notification over all days
+   *
+   * [Original challenge](https://www.hackerrank.com/challenges/mark-and-toys/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=sorting&h_r=next-challenge&h_v=zen)
+   *
+   * @param expenditure An array of daily expenditures
+   * @param d The number of trailing days to calculate median from
+   * @returns The number of days that an alert is sent
+   */
+  static fraudulentActivitiyNotifications(
+    expenditure: number[],
+    d: number
+  ): number {
+    function findLoc(el, arr, st, en) {
+      st = st || 0
+      en = en || arr.length
+      const pivot = parseInt(st + (en - st) / 2, 10)
+      if (en - st <= 1 || +arr[pivot] === +el) return pivot
+      if (+arr[pivot] < +el) {
+        return findLoc(+el, arr, pivot, en)
+      }
+      return findLoc(+el, arr, st, pivot)
+    }
+
+    function addToArray(arr, el) {
+      arr.splice(findLoc(+el, arr, 0, arr.length) + 1, 0, el)
+      return arr
+    }
+
+    function removeFromArray(arr, el) {
+      arr.splice(arr.indexOf(+el), 1)
+      return arr
+    }
+
+    let median = 0
+    let notifications = 0
+    const rollingArray = []
+    for (let i = 0; i < expenditure.length; i++) {
+      addToArray(rollingArray, expenditure[i])
+      if (i >= d) {
+        // is there a way to sort once?
+        if (d % 2 === 0) {
+          median = (rollingArray[d / 2] + rollingArray[d / 2 - 1]) / 2
+        } else {
+          median = rollingArray[(d - 1) / 2]
+        }
+        if (expenditure[i] >= median * 2) notifications++
+        removeFromArray(rollingArray, expenditure[i - d])
+      }
+    }
+    return notifications
   }
 }
 
