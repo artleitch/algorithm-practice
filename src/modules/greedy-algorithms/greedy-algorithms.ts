@@ -22,9 +22,9 @@ class GreedyAlgorithms {
       .sort((a, b) => {
         return a - b
       })
-      .reduce((acc, el, i, arr) => {
+      .reduce((acc, el, i, arrIterate) => {
         if (i) {
-          return Math.min(acc, Math.abs(el - arr[i - 1]))
+          return Math.min(acc, Math.abs(el - arrIterate[i - 1]))
         }
         return acc
       }, Infinity)

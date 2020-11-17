@@ -20,7 +20,7 @@
 
 ▸ `Static`**countTriplets**(`arr`: number[], `r`: number): number
 
-*Defined in [src/modules/dictionaries-and-hashmaps/dictionaries-and-hashmaps.ts:19](https://github.com/artleitch/js-gym/blob/3839d11/src/modules/dictionaries-and-hashmaps/dictionaries-and-hashmaps.ts#L19)*
+*Defined in [src/modules/dictionaries-and-hashmaps/dictionaries-and-hashmaps.ts:19](https://github.com/artleitch/js-gym/blob/cda98a4/src/modules/dictionaries-and-hashmaps/dictionaries-and-hashmaps.ts#L19)*
 
 **`name`** countTriplets
 
