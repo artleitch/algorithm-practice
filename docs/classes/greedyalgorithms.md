@@ -20,7 +20,7 @@
 
 ▸ `Static`**minimumDiffInArray**(`arr`: number[]): number
 
-*Defined in [src/modules/greedy-algorithms/greedy-algorithms.ts:20](https://github.com/artleitch/js-gym/blob/cda98a4/src/modules/greedy-algorithms/greedy-algorithms.ts#L20)*
+*Defined in [src/modules/greedy-algorithms/greedy-algorithms.ts:20](https://github.com/artleitch/js-gym/blob/2843b41/src/modules/greedy-algorithms/greedy-algorithms.ts#L20)*
 
 **`name`** 
 
