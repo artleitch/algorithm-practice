@@ -13,6 +13,7 @@
 ### Methods
 
 * [balancedBrackets](search.md#balancedbrackets)
+* [taleOfTwoStacks](search.md#taleoftwostacks)
 * [whatFlavors](search.md#whatflavors)
 
 ## Methods
@@ -21,9 +22,9 @@
 
 ▸ `Static`**balancedBrackets**(`s`: string): string
 
-*Defined in src/modules/stacks/stacks.ts:34*
+*Defined in [src/modules/stacks/stacks.ts:34](https://github.com/artleitch/js-gym/blob/10f7f8a/src/modules/stacks/stacks.ts#L34)*
 
-**`name`** whatFlavors
+**`name`** balancedBrackets
 
 **`description`** 
 A bracket is considered to be any one of the following characters: (, ),
@@ -59,11 +60,49 @@ YES or NO depending on whether the string is balanced
 
 ___
 
+### taleOfTwoStacks
+
+▸ `Static`**taleOfTwoStacks**(`input`: string): void
+
+*Defined in [src/modules/stacks/stacks.ts:86](https://github.com/artleitch/js-gym/blob/10f7f8a/src/modules/stacks/stacks.ts#L86)*
+
+**`name`** taleOfTwoStacks
+
+**`description`** 
+A queue is an abstract data type that maintains the order in which elements
+ were added to it, allowing the oldest elements to be removed from the
+front and new elements to be added to the rear. This is called a
+First-In-First-Out (FIFO) data structure because the first element added
+to the queue (i.e., the one that has been waiting the longest) is always
+the first one to be removed.
+A basic queue has the following operations:
+Enqueue: add a new element to the end of the queue.
+Dequeue: remove the element from the front of the queue and return it.
+In this challenge, you must first implement a queue using two stacks. Then
+process q queries, where each query is one of the following 3 types:
+1 x: Enqueue element xinto the end of the queue.
+2: Dequeue the element at the front of the queue.
+3: Print the element at the front of the queue.
+
+[Original challenge](https://www.hackerrank.com/challenges/ctci-queue-using-two-stacks/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=stacks-queues&h_r=next-challenge&h_v=zen)
+
+#### Parameters:
+
+Name | Type |
+------ | ------ |
+`input` | string |
+
+**Returns:** void
+
+YES or NO depending on whether the string is balanced
+
+___
+
 ### whatFlavors
 
 ▸ `Static`**whatFlavors**(`cost`: number[], `money`: number): string
 
-*Defined in [src/modules/search/search.ts:19](https://github.com/artleitch/js-gym/blob/2843b41/src/modules/search/search.ts#L19)*
+*Defined in [src/modules/search/search.ts:19](https://github.com/artleitch/js-gym/blob/10f7f8a/src/modules/search/search.ts#L19)*
 
 **`name`** whatFlavors
 

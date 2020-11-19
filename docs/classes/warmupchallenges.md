@@ -23,7 +23,7 @@
 
 ▸ `Static`**countingValleys**(`length`: number, `movements`: string): number
 
-*Defined in [src/modules/warm-up-challenges/warm-up-challenges.ts:41](https://github.com/artleitch/js-gym/blob/2843b41/src/modules/warm-up-challenges/warm-up-challenges.ts#L41)*
+*Defined in [src/modules/warm-up-challenges/warm-up-challenges.ts:41](https://github.com/artleitch/js-gym/blob/10f7f8a/src/modules/warm-up-challenges/warm-up-challenges.ts#L41)*
 
 **`name`** countingValleys
 
@@ -50,7 +50,7 @@ ___
 
 ▸ `Static`**jumpingOnTheClouds**(`clouds`: number[]): number
 
-*Defined in [src/modules/warm-up-challenges/warm-up-challenges.ts:73](https://github.com/artleitch/js-gym/blob/2843b41/src/modules/warm-up-challenges/warm-up-challenges.ts#L73)*
+*Defined in [src/modules/warm-up-challenges/warm-up-challenges.ts:73](https://github.com/artleitch/js-gym/blob/10f7f8a/src/modules/warm-up-challenges/warm-up-challenges.ts#L73)*
 
 **`name`** jumpingOnTheClouds
 
@@ -88,7 +88,7 @@ ___
 
 ▸ `Static`**repeatedString**(`string`: string, `n`: number): number
 
-*Defined in [src/modules/warm-up-challenges/warm-up-challenges.ts:107](https://github.com/artleitch/js-gym/blob/2843b41/src/modules/warm-up-challenges/warm-up-challenges.ts#L107)*
+*Defined in [src/modules/warm-up-challenges/warm-up-challenges.ts:107](https://github.com/artleitch/js-gym/blob/10f7f8a/src/modules/warm-up-challenges/warm-up-challenges.ts#L107)*
 
 **`name`** jumpingOnTheClouds
 
@@ -120,7 +120,7 @@ ___
 
 ▸ `Static`**salesByMatch**(`length`: number, `socks`: number[]): number
 
-*Defined in [src/modules/warm-up-challenges/warm-up-challenges.ts:16](https://github.com/artleitch/js-gym/blob/2843b41/src/modules/warm-up-challenges/warm-up-challenges.ts#L16)*
+*Defined in [src/modules/warm-up-challenges/warm-up-challenges.ts:16](https://github.com/artleitch/js-gym/blob/10f7f8a/src/modules/warm-up-challenges/warm-up-challenges.ts#L16)*
 
 **`name`** salesByMatch
 

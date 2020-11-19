@@ -20,6 +20,6 @@
 
 ▸ `Static`**testAlgorithm**(): boolean
 
-*Defined in [src/modules/module02/module02.ts:5](https://github.com/artleitch/js-gym/blob/2843b41/src/modules/module02/module02.ts#L5)*
+*Defined in [src/modules/module02/module02.ts:5](https://github.com/artleitch/js-gym/blob/10f7f8a/src/modules/module02/module02.ts#L5)*
 
 **Returns:** boolean

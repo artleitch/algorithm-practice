@@ -26,7 +26,7 @@
 
 ▪ `Const` **jsGym**: object
 
-*Defined in [src/index.ts:7](https://github.com/artleitch/js-gym/blob/2843b41/src/index.ts#L7)*
+*Defined in [src/index.ts:7](https://github.com/artleitch/js-gym/blob/10f7f8a/src/index.ts#L7)*
 
 #### Properties:
 
