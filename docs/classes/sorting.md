@@ -23,7 +23,7 @@
 
 ▸ `Static`**bubbleSort**(`a`: number[]): number
 
-*Defined in [src/modules/sorting/sorting.ts:24](https://github.com/artleitch/js-gym/blob/10f7f8a/src/modules/sorting/sorting.ts#L24)*
+*Defined in [src/modules/sorting/sorting.ts:24](https://github.com/artleitch/js-gym/blob/992a2d7/src/modules/sorting/sorting.ts#L24)*
 
 **`name`** bubbleSort
 
@@ -55,7 +55,7 @@ ___
 
 ▸ `Static`**countingInversions**(`arr`: number[]): number
 
-*Defined in [src/modules/sorting/sorting.ts:155](https://github.com/artleitch/js-gym/blob/10f7f8a/src/modules/sorting/sorting.ts#L155)*
+*Defined in [src/modules/sorting/sorting.ts:155](https://github.com/artleitch/js-gym/blob/992a2d7/src/modules/sorting/sorting.ts#L155)*
 
 **`name`** countingInversions
 
@@ -79,7 +79,7 @@ ___
 
 ▸ `Static`**fraudulentActivitiyNotifications**(`expenditure`: number[], `d`: number): number
 
-*Defined in [src/modules/sorting/sorting.ts:102](https://github.com/artleitch/js-gym/blob/10f7f8a/src/modules/sorting/sorting.ts#L102)*
+*Defined in [src/modules/sorting/sorting.ts:102](https://github.com/artleitch/js-gym/blob/992a2d7/src/modules/sorting/sorting.ts#L102)*
 
 **`name`** fraudulentActivitiyNotifications
 
@@ -114,7 +114,7 @@ ___
 
 ▸ `Static`**markAndToys**(`prices`: number[], `k`: number): number
 
-*Defined in [src/modules/sorting/sorting.ts:62](https://github.com/artleitch/js-gym/blob/10f7f8a/src/modules/sorting/sorting.ts#L62)*
+*Defined in [src/modules/sorting/sorting.ts:62](https://github.com/artleitch/js-gym/blob/992a2d7/src/modules/sorting/sorting.ts#L62)*
 
 **`name`** markAndToys
 

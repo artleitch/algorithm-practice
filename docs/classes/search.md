@@ -22,7 +22,7 @@
 
 ▸ `Static`**balancedBrackets**(`s`: string): string
 
-*Defined in [src/modules/stacks/stacks.ts:34](https://github.com/artleitch/js-gym/blob/10f7f8a/src/modules/stacks/stacks.ts#L34)*
+*Defined in [src/modules/stacks/stacks.ts:34](https://github.com/artleitch/js-gym/blob/992a2d7/src/modules/stacks/stacks.ts#L34)*
 
 **`name`** balancedBrackets
 
@@ -64,7 +64,7 @@ ___
 
 ▸ `Static`**taleOfTwoStacks**(`input`: string): void
 
-*Defined in [src/modules/stacks/stacks.ts:86](https://github.com/artleitch/js-gym/blob/10f7f8a/src/modules/stacks/stacks.ts#L86)*
+*Defined in [src/modules/stacks/stacks.ts:86](https://github.com/artleitch/js-gym/blob/992a2d7/src/modules/stacks/stacks.ts#L86)*
 
 **`name`** taleOfTwoStacks
 
@@ -102,7 +102,7 @@ ___
 
 ▸ `Static`**whatFlavors**(`cost`: number[], `money`: number): string
 
-*Defined in [src/modules/search/search.ts:19](https://github.com/artleitch/js-gym/blob/10f7f8a/src/modules/search/search.ts#L19)*
+*Defined in [src/modules/search/search.ts:19](https://github.com/artleitch/js-gym/blob/992a2d7/src/modules/search/search.ts#L19)*
 
 **`name`** whatFlavors
 

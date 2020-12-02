@@ -90,8 +90,8 @@ class GreedyAlgorithms {
    * lengths of its sides as space-separated integers in non-decreasing order.
    * [Original challenge](https://www.hackerrank.com/challenges/maximum-perimeter-triangle/problem)
    *
-   * @param
-   * @returns
+   * @param sticks The sticks with which to make triangles
+   * @returns The maximum perimeter possible with given stricks
    */
   static maximumPerimeterTriangle(sticks: number[]): number {
     // triangle already sorted
@@ -131,8 +131,9 @@ class GreedyAlgorithms {
    * they are or NO if they are not.
    * [Original challenge](https://www.hackerrank.com/challenges/grid-challenge/problem)
    *
-   * @param
-   * @returns
+   * @param grid Array of strings with which to construct the 2D array of sorted
+   *  strings
+   * @returns Whether the horizontally sorted array is vertically sorted
    */
   static gridChallenge(grid: string[]): string {
     function arraysMatch(arr1, arr2) {
@@ -171,8 +172,8 @@ class GreedyAlgorithms {
    * he must walk at least 2 ** j * c miles to maintain his weight.
    * [Original challenge](https://www.hackerrank.com/challenges/marcs-cakewalk/problem)
    *
-   * @param
-   * @returns
+   * @param calorie The list of cupcake calories
+   * @returns The mimumum calorie count possible
    */
   static marcsCakewalk(calorie: number[]): number {
     // going to assume we reverse sort calories and calculate from there. It
@@ -191,8 +192,9 @@ class GreedyAlgorithms {
    * @description
    * [Original challenge](https://www.hackerrank.com/challenges/greedy-florist/problem)
    *
-   * @param
-   * @returns
+   * @param k The number of customers
+   * @param c The costs of the flowers
+   * @returns The mimimum cost of the flowers
    */
   static greedyFlorist(k: number, c: number[]): number {
     c.sort((a, b) => b - a)
