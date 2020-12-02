@@ -7,7 +7,9 @@ class GreedyAlgorithms {
   /**
    * @name
    * @description
-   * Complete the minimumAbsoluteDifference function in the editor below. It should return an integer that represents the minimum absolute difference between any pair of elements.
+   * Complete the minimumAbsoluteDifference function in the editor below. It
+   * should return an integer that represents the minimum absolute difference
+   * between any pair of elements.
    *
    * minimumAbsoluteDifference has the following parameter(s):
    * arr: an array of integers
@@ -79,6 +81,76 @@ class GreedyAlgorithms {
     }
     return sum
   }
+
+  /**
+   * @name maximumPerimeterTriangle
+   * @description
+   * Given an array of stick lengths, use 3 of them to construct a
+   * non-degenerate triange with the maximum possible perimeter. Print the
+   * lengths of its sides as space-separated integers in non-decreasing order.
+   * [Original challenge](https://www.hackerrank.com/challenges/maximum-perimeter-triangle/problem)
+   *
+   * @param
+   * @returns
+   */
+  static maximumPerimeterTriangle(sticks: number[]): number {
+    // triangle already sorted
+    function isValidTriangle(triangle) {
+      return triangle[1] + triangle[2] > triangle[0]
+    }
+
+    // order descending
+    // test all combinations until a valid triangle is found
+    const sortedSticks = sticks.sort((a, b) => b - a)
+    let perimiter = -Infinity
+    let bigTri: any = -1
+    for (let i = 0; i < sortedSticks.length - 2; i++) {
+      for (let j = i + 1; j < sortedSticks.length - 1; j++) {
+        for (let k = j + 1; k < sortedSticks.length; k++) {
+          const triangle = [sortedSticks[i], sortedSticks[j], sortedSticks[k]]
+          const validTriangle = isValidTriangle(triangle)
+          if (
+            triangle[0] + triangle[1] + triangle[2] > perimiter &&
+            validTriangle
+          ) {
+            perimiter = triangle[0] + triangle[1] + triangle[2]
+            bigTri = triangle
+          }
+        }
+      }
+    }
+    return bigTri === -1 ? [-1] : bigTri.reverse()
+  }
+
+  // /**
+  //  * @name
+  //  * @description
+  //  * [Original challenge]()
+  //  *
+  //  * @param
+  //  * @returns
+  //  */
+  // static(): {}
+
+  // /**
+  //  * @name
+  //  * @description
+  //  * [Original challenge]()
+  //  *
+  //  * @param
+  //  * @returns
+  //  */
+  // static(): {}
+
+  // /**
+  //  * @name
+  //  * @description
+  //  * [Original challenge]()
+  //  *
+  //  * @param
+  //  * @returns
+  //  */
+  // static(): {}
 }
 
 export default GreedyAlgorithms
