@@ -208,6 +208,40 @@ class GreedyAlgorithms {
     }
     return total
   }
+
+  /**
+   * @name markAndToys
+   * @description
+   * Mark and Jane are very happy after having their first child. Their son
+   * loves toys, so Mark wants to buy some. There are a number of different toys
+   *  lying in front of him, tagged with their prices. Mark has only a certain
+   * amount to spend, and he wants to maximize the number of toys he buys with
+   * this money.
+   * Given a list of prices and an amount to spend, what is the maximum number
+   * of toys Mark can buy?
+   * [Original challenge](https://www.hackerrank.com/challenges/mark-and-toys/problem)
+   *
+   * @param prices The list of toy prices
+   * @param k The amount available to spend
+   * @returns The number of toys able to be bought
+   */
+  static markAndToys(prices: number[], k: number): number {
+    const sortedToys = prices.slice().sort((a, b) => a - b)
+    let acc = 0
+    let toysToPurchase = 0
+    for (let i = 0; i < sortedToys.length; i++) {
+      acc += +sortedToys[i]
+      if (acc > k) {
+        toysToPurchase = i
+        break
+      }
+      if (i === sortedToys.length - 1 && acc <= k) {
+        toysToPurchase = sortedToys.length
+        break
+      }
+    }
+    return toysToPurchase
+  }
 }
 
 export default GreedyAlgorithms
