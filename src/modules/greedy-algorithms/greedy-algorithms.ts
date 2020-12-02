@@ -162,15 +162,29 @@ class GreedyAlgorithms {
     return allSorted ? 'YES' : 'NO'
   }
 
-  // /**
-  //  * @name
-  //  * @description
-  //  * [Original challenge]()
-  //  *
-  //  * @param
-  //  * @returns
-  //  */
-  // static(): {}
+  /**
+   * @name marcsCakewalk
+   * @description
+   * Marc loves cupcakes, but he also likes to stay fit. Each cupcake has a
+   * calorie count, and Marc can walk a distance to expend those calories. If
+   * Marc has eaten j cupcakes so far, after eating a cupcake with c calories
+   * he must walk at least 2 ** j * c miles to maintain his weight.
+   * [Original challenge](https://www.hackerrank.com/challenges/marcs-cakewalk/problem)
+   *
+   * @param
+   * @returns
+   */
+  static marcsCakewalk(calorie: number[]): number {
+    // going to assume we reverse sort calories and calculate from there. It
+    // could be possible that other combinations would yield better results, but
+    // unlikely
+    const sortedArray = calorie.sort((a, b) => b - a)
+    let min = 0
+    for (let i = 0; i < sortedArray.length; i++) {
+      min += sortedArray[i] * 2 ** i
+    }
+    return min
+  }
 
   // /**
   //  * @name
