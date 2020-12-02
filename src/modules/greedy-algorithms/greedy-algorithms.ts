@@ -122,15 +122,45 @@ class GreedyAlgorithms {
     return bigTri === -1 ? [-1] : bigTri.reverse()
   }
 
-  // /**
-  //  * @name
-  //  * @description
-  //  * [Original challenge]()
-  //  *
-  //  * @param
-  //  * @returns
-  //  */
-  // static(): {}
+  /**
+   * @name gridChallenge
+   * @description
+   * Given a square grid of characters in the range ascii[a-z], rearrange
+   * elements of each row alphabetically, ascending. Determine if the columns
+   * are also in ascending alphabetical order, top to bottom. Return YES if
+   * they are or NO if they are not.
+   * [Original challenge](https://www.hackerrank.com/challenges/grid-challenge/problem)
+   *
+   * @param
+   * @returns
+   */
+  static gridChallenge(grid: string[]): string {
+    function arraysMatch(arr1, arr2) {
+      let match = true
+      for (let i = 0; i < arr1.length; i++) {
+        const currMatch = arr1[i] === arr2[i]
+        match = match && currMatch
+        if (!currMatch) break
+      }
+      return match
+    }
+    const sortedArrays: string[][] = grid.map((subArray) => {
+      return subArray.split('').sort()
+    })
+    let allSorted = true
+    for (let i = 0; i < sortedArrays[0].length; i++) {
+      const arr: string[] = []
+      for (let j = 0; j < sortedArrays.length; j++) {
+        arr.push(sortedArrays[j][i])
+      }
+      const sortedArr = [...arr]
+      sortedArr.sort()
+      const currSorted = arraysMatch(sortedArr, arr)
+      allSorted = allSorted && currSorted
+      if (!currSorted) break
+    }
+    return allSorted ? 'YES' : 'NO'
+  }
 
   // /**
   //  * @name
