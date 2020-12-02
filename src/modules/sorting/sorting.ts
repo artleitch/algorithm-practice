@@ -169,7 +169,7 @@ class Sorting {
           NewArr.push(a2[ptrB])
           ptrB++
           // and here's the extra line to get the count
-          count = count + (a1.length - ptrA)
+          count += a1.length - ptrA
         }
       }
       for (let i = ptrA; i < a1.length; i++) {
@@ -182,8 +182,8 @@ class Sorting {
     }
 
     function mergesort(myar: number[]): { newArr: number[]; count: number } {
-      if (myar.length == 1) return { newArr: myar, count: 0 }
-      let mid = Math.floor(myar.length / 2)
+      if (myar.length === 1) return { newArr: myar, count: 0 }
+      const mid = Math.floor(myar.length / 2)
       const { newArr: a1, count: count1 } = mergesort(myar.slice(0, mid))
       const { newArr: a2, count: count2 } = mergesort(myar.slice(mid))
       const { newArr, count } = merge(a1, a2)
