@@ -186,15 +186,26 @@ class GreedyAlgorithms {
     return min
   }
 
-  // /**
-  //  * @name
-  //  * @description
-  //  * [Original challenge]()
-  //  *
-  //  * @param
-  //  * @returns
-  //  */
-  // static(): {}
+  /**
+   * @name greedyFlorist
+   * @description
+   * [Original challenge](https://www.hackerrank.com/challenges/greedy-florist/problem)
+   *
+   * @param
+   * @returns
+   */
+  static greedyFlorist(k: number, c: number[]): number {
+    c.sort((a, b) => b - a)
+    let multiplier = 0
+    let total = 0
+    for (let i = 0; i < c.length; i++) {
+      if (i % k === 0 && i !== 0) {
+        multiplier++
+      }
+      total += c[i] * (multiplier + 1)
+    }
+    return total
+  }
 }
 
 export default GreedyAlgorithms
