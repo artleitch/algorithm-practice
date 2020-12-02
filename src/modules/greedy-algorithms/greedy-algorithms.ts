@@ -29,6 +29,56 @@ class GreedyAlgorithms {
         return acc
       }, Infinity)
   }
+
+  /**
+   * @name candies
+   * @description
+   * Alice is a kindergarten teacher. She wants to give some candies to the
+   * children in her class.  All the children sit in a line and each of them
+   * has a rating score according to his or her performance in the class. Alice
+   *  wants to give at least 1 candy to each child. If two children sit next to
+   * each other, then the one with the higher rating must get more candies.
+   * Alice wants to minimize the total number of candies she must buy.
+   * [Original challenge](https://www.hackerrank.com/challenges/candies/problem)
+   *
+   * @param n Dumber of students
+   * @param arr An array of students results
+   * @returns Minimum number of candies needed
+   */
+  static candies(n: number, arr: number[]): number {
+    const size = arr.length
+    const arrLTR: number[] = []
+    for (let i = 0; i < size; i++) {
+      const curr = arr[i]
+      const prev = arr[i - 1]
+      if (i === 0) {
+        arrLTR[i] = 1
+      } else if (curr > prev) {
+        arrLTR[i] = arrLTR[i - 1] + 1
+      } else {
+        arrLTR[i] = 1
+      }
+    }
+
+    const arrRTL: number[] = []
+    for (let j = size - 1; j >= 0; j--) {
+      const curr = arr[j]
+      const prev = arr[j + 1]
+      if (j === size - 1) {
+        arrRTL[j] = 1
+      } else if (curr > prev) {
+        arrRTL[j] = arrRTL[j + 1] + 1
+      } else {
+        arrRTL[j] = 1
+      }
+    }
+
+    let sum = 0
+    for (let k = 0; k < size; k++) {
+      sum += Math.max(arrLTR[k], arrRTL[k])
+    }
+    return sum
+  }
 }
 
 export default GreedyAlgorithms
